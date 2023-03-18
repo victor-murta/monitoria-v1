@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+.b-1{
+    border-radius: .5rem;
+}
+.b-2{
+    border-radius: 1rem;
+}
+
+.b-3{
+    border-radius: 1.5rem;
+}
+
+.b-4{
+    border-radius: 2rem;
+}
+
+.container {
+    padding: 0 5rem 0 5rem;
+}

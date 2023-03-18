@@ -1,0 +1,19 @@
+<div class="container text-center mt-4 mb-4">
+
+  <h1 class="card mt-4">Cursos Asa norte</h1>
+  <div class="d-inline-flex flex-row me-2 mt-4" *ngFor="let curso of cursos">
+    <div class="card me-3">
+      <div class="card-header">{{ curso.nome }}</div>
+      <div class="card-body">
+        <p>Período: {{ curso.periodo }}</p>
+        <p>Avaliação: {{ curso.avaliacao }}</p>
+        <p>Horário: {{ curso.horario }}</p>
+        <p>Sala: {{ curso.sala }}</p>
+        <p *ngIf="curso.inscricao != 'Encerrado' && curso.inscricao != '' ">
+          <a [href]="curso.inscricao">Inscreva-se</a>
+        </p>
+        <p *ngIf="curso.inscricao == 'Encerrado'">Encerrado</p>
+      </div>
+    </div>
+  </div>
+</div>

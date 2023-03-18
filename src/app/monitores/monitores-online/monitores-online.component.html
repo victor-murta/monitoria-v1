@@ -1,0 +1,14 @@
+<div class="container w-100 text-center mt-4 mb-4">
+
+  <h1 class="card mt-4">Monitoria Online</h1>
+  <h3>De segunda a sexta - das 18h às 20h</h3>
+
+  <div class="d-inline-flex flex-row me-2 mt-4" *ngFor="let monitor_online of monitores_online">
+    <div class="card me-3">
+      <div class="card-header">{{ monitor_online.nome }}</div>
+      <div class="card-body">
+        <a href="https://meet.google.com/ztw-hcra-yxb">Link da sala</a>
+      </div>
+    </div>
+  </div>
+</div>

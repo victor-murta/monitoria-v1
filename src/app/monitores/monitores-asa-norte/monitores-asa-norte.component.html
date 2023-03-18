@@ -1,0 +1,15 @@
+<div class="container text-center mt-4 mb-4">
+
+  <h1  class="card mt-4">Monitores Asa Norte - Laboratório 5100 - Bloco 5</h1>
+  <h3>De segunda a sexta - das 17h30 às 19h10</h3>
+
+
+  <div class="d-inline-flex flex-row me-2 mt-2" *ngFor="let monitor of monitores">
+    <div class="card me-3">
+      <div class="card-header">{{ monitor.nome }}</div>
+      <div class="card-body">
+        <p>{{ monitor.email }}</p>
+      </div>
+    </div>
+  </div>
+</div>
